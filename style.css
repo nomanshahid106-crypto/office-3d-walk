@@ -1,0 +1,21 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#0f172a;color:#fff;overflow:hidden}
+#app{position:fixed;inset:0}
+canvas#scene{width:100%;height:100%;display:block}
+#hud{position:absolute;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:16px 20px;pointer-events:none;z-index:10}
+.logo{font-weight:900;font-size:22px;letter-spacing:.5px;background:rgba(15,23,42,.75);backdrop-filter:blur(10px);padding:10px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.15)}
+.logo span{color:#38bdf8}
+.hud-right{display:flex;gap:8px;pointer-events:auto}
+.hud-right button{background:#fff;color:#0f172a;border:0;padding:10px 14px;border-radius:999px;font-weight:700;cursor:pointer}
+.hud-right button:hover{background:#e0f2fe}
+#controls-card{position:absolute;left:20px;bottom:52px;background:rgba(15,23,42,.82);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:14px 16px;line-height:1.9;font-size:13px;z-index:10;max-width:320px}
+#controls-card h3{font-size:13px;margin-bottom:4px}
+kbd{background:#fff;color:#111;padding:2px 6px;border-radius:6px;font-size:11px;font-weight:800;margin-right:2px;box-shadow:0 2px 0 #cbd5e1}
+#info{position:absolute;right:20px;top:76px;width:280px;background:#fff;color:#0f172a;border-radius:16px;padding:16px;z-index:10;box-shadow:0 20px 40px rgba(0,0,0,.35)}
+#info p{color:#475569;font-size:13px;line-height:1.6;margin-top:6px}
+#footer{position:absolute;left:50%;transform:translateX(-50%);bottom:14px;background:rgba(0,0,0,.55);padding:7px 12px;border-radius:999px;font-size:12px;white-space:nowrap;z-index:10}
+#joystick{position:absolute;left:22px;bottom:210px;width:110px;height:110px;border-radius:50%;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);display:none;z-index:20;touch-action:none}
+#stick{width:48px;height:48px;border-radius:50%;background:#fff;position:absolute;left:31px;top:31px}
+#mobile-btns{position:absolute;right:20px;bottom:210px;display:none;z-index:20}
+#mobile-btns button{width:56px;height:56px;border-radius:50%;border:0;font-size:22px}
+@media(max-width:820px){#controls-card{display:none}#info{display:none}#joystick{display:block}#mobile-btns{display:block}#footer{font-size:11px}}

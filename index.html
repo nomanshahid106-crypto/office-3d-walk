@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Office 3D — Walk Around | Three.js</title>
+<link rel="stylesheet" href="style.css" />
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+</head>
+<body>
+<div id="app">
+  <canvas id="scene"></canvas>
+
+  <div id="hud">
+    <div class="logo">🏢 OFFICE<span>3D</span></div>
+    <div class="hud-right">
+      <button id="viewBtn">📷 Third Person (V)</button>
+      <button id="resetBtn">↺ Reset Position</button>
+    </div>
+  </div>
+
+  <div id="controls-card">
+    <h3>🎮 Controls</h3>
+    <div><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> Walk</div>
+    <div><kbd>←</kbd><kbd>→</kbd> Turn &nbsp; <kbd>↑</kbd><kbd>↓</kbd> Forward / Back</div>
+    <div><kbd>Shift</kbd> Run &nbsp; <kbd>Mouse Drag</kbd> Orbit Camera</div>
+    <div><kbd>V</kbd> Toggle View &nbsp; <kbd>Scroll</kbd> Zoom</div>
+  </div>
+
+  <div id="info">
+    <strong>Welcome to the 3D Office</strong>
+    <p>Walk freely around desks, chairs & meeting area. Built with Three.js — animated walk cycle, shadows & collision.</p>
+  </div>
+
+  <!-- Mobile joystick -->
+  <div id="joystick"><div id="stick"></div></div>
+  <div id="mobile-btns"><button id="runBtn">🏃</button></div>
+
+  <div id="footer">Three.js • WASD Walking • Animated Character • Collision Detection</div>
+</div>
+<script type="module" src="main.js"></script>
+</body>
+</html>
